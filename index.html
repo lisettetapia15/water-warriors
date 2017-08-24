@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Water Warriors</title>
+
+<div class="body">
+	
+	<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#" style="font-size: 25px;">WATER WARRIORS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#whycare">Why Care?</a></li>
+        <li><a href="#ourmission">Our Mission</a></li>
+        <li><a href="#aboutwaterpollution">What is Water Pollution?</a></li>
+        <li><a href="#howtoapply">How To Apply</a></li>
+        <li><a href="#altvolunteer">Alt Volunteer</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+	<div class="container-fluid bg-1 text-center">
+		<h1 id="whycare" style="font-size: 35px; ">Why should you care?</h1>
+		<img src="dirtywater.jpg" style="display:inline; width: 35%;" alt="Water">
+    <img src="waterexample.jpg" style="display:inline; width: 37%; height: 290px;" alt="Water 2">
+		<h3>According to Cornell University, about 40 percent of deaths worldwide are caused by water, air and soil pollution. Besides malnutrition, water pollution is also a direct cause of 6 million children's deaths each year.</h3>
+	</div>
+	
+	<div class="container-fluid bg-2 text-center">
+  <h1 id="ourmission">Our Mission</h1>
+  <p>Our mission is to educate the youth with a problem in our world that is not really addressed about. We want to spread the message how water all around the world is being polluted and there aren't many people taking action. With our project, we hope to share a message worldwide that anyone can help end water pollution whether it's by volunteering with others to clean waterways. Even if you're busy and can't physically volunteer, you can raise awareness to a specific ocean or river that is polluted and hasn't been cared for. We want our users to be informed about water pollution but also be encourage to help the water. </p>
+</div>
+
+<div class="container-fluid bg-3 text-left">
+  <h1 id="aboutwaterpollution">About Water Pollution:</h1>
+  <h4 style="font-size: 21px;"> Water pollution is the contamination of water systems of harmful substances and pollutants. These substances prove harmful to animals and people. Water pollution is caused by littering, industrial waste, oil spills and global warming. </h4>
+  <h5 style="text-indent: 1290px; font-size: 20px;"> If If you still want to learn more about water pollution; here are a few articles and videos down below!</h5>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/y1ObvXZDQNs" frameborder="0" allowfullscreen></iframe>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/93BqLewm3bA" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://wwf.panda.org/about_our_earth/teacher_resources/webfieldtrips/water_pollution/index.cfm"> World Wildlife Fund</a></p>
+    <p><a href="http://www.nationalgeographic.com/environment/freshwater/pollution/"> National Geographic</a></p>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-4 text-left">
+<h3 id="howtoapply">How To Apply</h3>
+<div class="form-group">
+        <label for="First_Name">First Name</label>
+        <input type="text" class="form-control" id="First_Name"  placeholder="Enter First Name">
+      </div>
+
+       <div class="form-group">
+        <label for="Last_Name">Last Name</label>
+        <input type="text" class="form-control" id="Last_Name" placeholder="Enter Last Name">
+      </div>
+
+       <div class="form-group">
+        <label for="Email_Address">Email Address</label>
+        <input type="text" class="form-control" id="Email_Address" placeholder="Enter Email Address">
+      </div>
+
+      <div class="form-group">
+        <label for="Address">Address</label>
+        <input type="text" class="form-control" id="Address"  placeholder="Enter your Address">
+      </div>
+
+      <div class="form-group">
+       <label for="Your_Age"> Age</label>
+       <input type="text" class="form-control" id="Your_Age" placeholder="Enter your age">
+     </div>
+
+       <div class="form-group">
+        <label for="Why_Join">Why do you wanna volunteer with us?</label>
+        <input type="text" class="form-control" id="Why_Join" placeholder="Response with a minimum of 300 words">
+      </div>
+
+      <br>
+      <input type="submit">   <input type="reset"></center>
+      </form>
+
+    </form>
+    </br>
+</div>
+
+<div class="container-fluid bg-5 text-center">
+ <h1 id="altvolunteer" style="font-size: 25px;"> Are you clueless when it comes to searching for volunteer events? Water bodies near you that need cleaning? Well, here's a solution for you. With our map below, you can find local water sources or organizations that combat these problems so you can volunteer or spread the word.</h1>
+
+</div>
+
+<style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+          <script>
+            // This example requires the Places library. Include the libraries=places
+            // parameter when you first load the API. For example:
+            // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+            var map;
+            var infowindow;
+
+            function initMap() {
+              var pyrmont = {lat: -33.867, lng: 151.195};
+
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: pyrmont,
+                zoom: 15
+              });
+
+              infowindow = new google.maps.InfoWindow();
+              var service = new google.maps.places.PlacesService(map);
+              service.nearbySearch({
+                location: pyrmont,
+                radius: 500,
+                type: ['store']
+              }, callback);
+            }
+
+            function callback(results, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (var i = 0; i < results.length; i++) {
+                  createMarker(results[i]);
+                }
+              }
+            }
+
+            function createMarker(place) {
+              var placeLoc = place.geometry.location;
+              var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+              });
+
+              google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(place.name);
+                infowindow.open(map, this);
+              });
+            }
+          </script>
+        </head>
+        <body>
+          <div id="map"></div>
+          <script src="https://maps.googleapis.com/maps/api/js?key=  AIzaSyDRX4HthfsMQhqxw9ONFnLwrOtJBfcUDes&libraries=places&callback=initMap" async defer></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </body>
+
+<div class="container-fluid bg-7 text-left">
+    <h1 id="aboutus" style="font-size: 35px;"> About Us </h1>
+    <div id="lisette"> <img src="lisette.jpg" alt="Lisette" width="300" height="250">
+    <p>I am a 15 year old Latina and a rising junior at an all girls school TYWLS of Astoria. My goals for the future is to major in computer science for media and create projects that can help change the world to become a better society.</p>
+    <img src="nayeli.jpg" alt="Nayeli" width="300" height="250">
+    <p>I am a 16 year old Latina and a rising junior at an all girls school St. Jean Baptiste. I aspire to major in either computer science or aerospace engineering. I also want to help the world become a better place through the use of technology.</p>
+
+
+<footer class="container-fluid bg-7 text-center">
+  	<a href="#" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-arrow-up"></span>
+</a>
+	</footer>
+	
+</div>
+</html>

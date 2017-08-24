@@ -1,0 +1,70 @@
+.body {
+    font: 20px "Lucida Console";
+    line-height: 1.8;
+    color: #EEEEEE;
+}
+
+.bg-1 {
+	background-color: #ccebff;
+	color: #000000;
+}
+
+.bg-2 { 
+    background-color: #EEEEEE;
+    color: #000000;
+}
+.bg-3 { 
+    background-color: #ccebff; 
+    color: #000000;
+}
+
+.bg-4 { 
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.bg-5 { 
+    background-color: #ccebff;
+    color: #000000;
+}
+
+.bg-6 { 
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.lisette {
+  width: 300px;
+  float: left;
+}
+
+.nayeli {
+  width: 700px;
+  float: left;
+}
+
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.margin {margin-bottom: 45px;}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #f5f6f7
+}
+
+.navbar-nav li a:hover {
+    color: #EEEEEEx !important;
+}
+
+p {font-size: 19px;}
